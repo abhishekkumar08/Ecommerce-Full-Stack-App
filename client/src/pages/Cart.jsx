@@ -8,7 +8,7 @@ import { mobile } from '../responsive';
 import StripeCheckout from 'react-stripe-checkout';
 import { useEffect, useState } from 'react';
 import { userRequest } from '../requestMethods';
-import { useHistory } from 'react-router';
+import { useNavigate } from 'react-router';
 
 const KEY = process.env.REACT_APP_STRIPE;
 
@@ -162,7 +162,7 @@ const Button = styled.button`
 const Cart = () => {
   const cart = useSelector((state) => state.cart);
   const [stripeToken, setStripeToken] = useState(null);
-  const history = useHistory();
+  const history = useNavigate();
 
   const onToken = (token) => {
     setStripeToken(token);
@@ -182,7 +182,7 @@ const Cart = () => {
       } catch {}
     };
     stripeToken && makeRequest();
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [stripeToken, cart.total, history]);
   return (
     <Container>
@@ -250,7 +250,7 @@ const Cart = () => {
               <SummaryItemPrice>$ {cart.total}</SummaryItemPrice>
             </SummaryItem>
             <StripeCheckout
-              name="Lama Shop"
+              name="AmazeKart"
               image="https://avatars.githubusercontent.com/u/1486366?v=4"
               billingAddress
               shippingAddress

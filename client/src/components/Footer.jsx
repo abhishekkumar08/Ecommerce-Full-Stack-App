@@ -87,11 +87,13 @@ const Footer = () => {
   return (
     <Container>
       <Left>
-        <Logo>LAMA.</Logo>
+        <Logo>AMAZEKART.</Logo>
         <Desc>
-          There are many variations of passages of Lorem Ipsum available, but
-          the majority have suffered alteration in some form, by injected
-          humour, or randomised words which don’t look even slightly believable.
+          Ecommerce (electronic commerce) refers to all online activity that
+          involves the buying and selling of products and services. In other
+          words, ecommerce is a process for conducting transactions online. When
+          you go to your favorite online retailer to buy a new pair of shoes,
+          you're engaging in ecommerce.
         </Desc>
         <SocialContainer>
           <SocialIcon color="3B5999">
@@ -126,14 +128,13 @@ const Footer = () => {
       <Right>
         <Title>Contact</Title>
         <ContactItem>
-          <Room style={{ marginRight: '10px' }} /> 622 Dixie Path , South
-          Tobinchester 98336
+          <Room style={{ marginRight: '10px' }} /> New Delhi, India
         </ContactItem>
         <ContactItem>
           <Phone style={{ marginRight: '10px' }} /> +1 234 56 78
         </ContactItem>
         <ContactItem>
-          <MailOutline style={{ marginRight: '10px' }} /> contact@lama.dev
+          <MailOutline style={{ marginRight: '10px' }} /> contact@amazecart.in
         </ContactItem>
         <Payment src="https://i.ibb.co/Qfvn4z6/payment.png" />
       </Right>
